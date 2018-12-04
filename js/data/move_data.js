@@ -3727,6 +3727,7 @@ var MOVES_LG = {
 	'Mega Drain': {
 		bp: 75,
 		type: 'Grass',
+		category: 'Special',
 		givesHealth: true,
 		percentHealed: 0.5
 	},
