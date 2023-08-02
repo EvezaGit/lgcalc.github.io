@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>A Pok&eacute;mon Calculator</title>
     <link type="text/css" rel="stylesheet" href="./select2/select2.css" />
-    <link type="text/css" rel="stylesheet" href="./shared_controls.css?11987dd0" />
+    <link type="text/css" rel="stylesheet" href="./shared_controls.css?" />
     <link type="text/css" rel="stylesheet" href="./bootstrap.css" />
 </head>
 
@@ -131,10 +131,6 @@
                     <label for="levelL1">Level</label>
                     <input class="level calc-trigger" id="levelL1" value="100" />
                 </div>
-				<div>
-                    <label for="happinessL1">Happiness</label>
-                    <input class="happiness calc-trigger" type="number" min="0" max="255" step="1" value="0" />
-                </div>
                 <div class="hide">
                     <label for="weightL1">Weight (kg)</label>
                     <input class="weight calc-trigger" id="weightL1" value="10.0" />
@@ -165,7 +161,7 @@
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
                             <td class="gen-specific g3 g4 g5 g6 g7 g8">
-                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
+                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
                             </td>
                             <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" disabled="disabled" />
@@ -185,7 +181,7 @@
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
                             <td class="gen-specific g3 g4 g5 g6 g7 g8">
-                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
+                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
                             </td>
                             <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
@@ -221,7 +217,7 @@
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
                             <td class="gen-specific g3 g4 g5 g6 g7 g8">
-                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
+                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
                             </td>
                             <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
@@ -257,7 +253,7 @@
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
                             <td class="gen-specific g3 g4 g5 g6 g7 g8">
-                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
+                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
                             </td>
                             <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
@@ -293,7 +289,7 @@
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
                             <td class="gen-specific g3 g4 g5 g6 g7 g8">
-                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
+                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
                             </td>
                             <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" disabled="disabled" />
@@ -359,7 +355,7 @@
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
                             <td class="gen-specific g3 g4 g5 g6 g7 g8">
-                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
+                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
                             </td>
                             <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
