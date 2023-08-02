@@ -43,7 +43,8 @@ var bounds = {
 	"avs": [0, 200],
 	"ivs": [0, 31],
 	"dvs": [0, 15],
-	"move-bp": [0, 999]
+	"move-bp": [0, 999],
+	"happiness": [0, 255]
 };
 for (var bounded in bounds) {
 	attachValidation(bounded, bounds[bounded][0], bounds[bounded][1]);
