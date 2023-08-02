@@ -1035,8 +1035,8 @@ function loadCustomList(id) {
 }
 
 $(document).ready(function () {
-	$("#gen7").prop("checked", true);
-	$("#gen7").change();
+	$("#gen8").prop("checked", true);
+	$("#gen8").change();
 	$("#percentage").prop("checked", true);
 	$("#percentage").change();
 	loadDefaultLists();

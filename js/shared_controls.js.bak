@@ -43,7 +43,8 @@ var bounds = {
 	"avs": [0, 200],
 	"ivs": [0, 31],
 	"dvs": [0, 15],
-	"move-bp": [0, 999]
+	"move-bp": [0, 999],
+	"happiness": [0, 255]
 };
 for (var bounded in bounds) {
 	attachValidation(bounded, bounds[bounded][0], bounds[bounded][1]);
@@ -495,6 +496,7 @@ function Pokemon(pokeInfo) {
 
 		var set = setdex[this.name][setName];
 		this.level = set.level;
+		this.happiness = set.happiness;
 		this.HPEVs = (set.evs && typeof set.evs.hp !== "undefined") ? set.evs.hp : 0;
 		if (gen < 3) {
 			var HPDVs = 15;
@@ -759,7 +761,7 @@ $(".gen").change(function () {
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
 		break;
-    case 8:
+    default:
 		pokedex = POKEDEX_LG;
 		setdex = SETDEX_LG;
 		typeChart = TYPE_CHART_XY;
@@ -770,7 +772,7 @@ $(".gen").change(function () {
 		calcHP = CALC_HP_LG;
 		calcStat = CALC_STAT_LG;
 		break;
-	default:
+	case 7:
 		pokedex = POKEDEX_SM;
 		setdex = SETDEX_SM;
 		typeChart = TYPE_CHART_XY;
@@ -1033,8 +1035,8 @@ function loadCustomList(id) {
 }
 
 $(document).ready(function () {
-	$("#gen7").prop("checked", true);
-	$("#gen7").change();
+	$("#gen8").prop("checked", true);
+	$("#gen8").change();
 	$("#percentage").prop("checked", true);
 	$("#percentage").change();
 	loadDefaultLists();

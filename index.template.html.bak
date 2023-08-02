@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>A Pok&eacute;mon Calculator</title>
     <link type="text/css" rel="stylesheet" href="./select2/select2.css" />
-    <link type="text/css" rel="stylesheet" href="./shared_controls.css?" />
+    <link type="text/css" rel="stylesheet" href="./shared_controls.css?11987dd0" />
     <link type="text/css" rel="stylesheet" href="./bootstrap.css" />
 </head>
 
@@ -26,13 +26,6 @@
         <span class="title-text">Pok&eacute;mon Damage Calculator</span>
         <span aria-labelledby="selectGenInstruction" role="radiogroup" title="Select the generation.">
             <span class="visually-hidden" id="selectGenInstruction">Select the generation.</span>
-            <input class="gen visually-hidden" type="radio" name="gen" value="1" id="gen1" /><label class="btn btn-small btn-left" for="gen1">RBY</label>
-            <input class="gen visually-hidden" type="radio" name="gen" value="2" id="gen2" /><label class="btn btn-small btn-mid" for="gen2">GSC</label>
-            <input class="gen visually-hidden" type="radio" name="gen" value="3" id="gen3" /><label class="btn btn-small btn-mid" for="gen3">ADV</label>
-            <input class="gen visually-hidden" type="radio" name="gen" value="4" id="gen4" /><label class="btn btn-small btn-mid" for="gen4">DPP</label>
-            <input class="gen visually-hidden" type="radio" name="gen" value="5" id="gen5" /><label class="btn btn-small btn-mid" for="gen5">B/W</label>
-            <input class="gen visually-hidden" type="radio" name="gen" value="6" id="gen6" /><label class="btn btn-small btn-mid" for="gen6">X/Y</label>
-			<input class="gen visually-hidden" type="radio" name="gen" value="7" id="gen7" /><label class="btn btn-small btn-mid" for="gen7">S/M</label>
 			<input class="gen visually-hidden" type="radio" name="gen" value="8" id="gen8" checked="checked"/><label class="btn btn-small btn-right" for="gen8">LG</label>
         </span>
         <span aria-labelledby="selectNotationInstruction" role="radiogroup" title="Select the output notation.">
@@ -131,6 +124,10 @@
                     <label for="levelL1">Level</label>
                     <input class="level calc-trigger" id="levelL1" value="100" />
                 </div>
+				<div>
+                    <label for="happinessL1">Happiness</label>
+                    <input class="happiness calc-trigger" type="number" min="0" max="255" step="1" value="0" />
+                </div>
                 <div class="hide">
                     <label for="weightL1">Weight (kg)</label>
                     <input class="weight calc-trigger" id="weightL1" value="10.0" />
@@ -161,7 +158,7 @@
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
                             <td class="gen-specific g3 g4 g5 g6 g7 g8">
-                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
+                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
                             <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" disabled="disabled" />
@@ -181,7 +178,7 @@
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
                             <td class="gen-specific g3 g4 g5 g6 g7 g8">
-                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
+                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
                             <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
@@ -217,7 +214,7 @@
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
                             <td class="gen-specific g3 g4 g5 g6 g7 g8">
-                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
+                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
                             <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
@@ -253,7 +250,7 @@
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
                             <td class="gen-specific g3 g4 g5 g6 g7 g8">
-                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
+                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
                             <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
@@ -289,7 +286,7 @@
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
                             <td class="gen-specific g3 g4 g5 g6 g7 g8">
-                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
+                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
                             <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" disabled="disabled" />
@@ -355,7 +352,7 @@
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
                             <td class="gen-specific g3 g4 g5 g6 g7 g8">
-                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
+                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
                             <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
@@ -849,6 +846,10 @@
                 <div>
                     <label for="levelR1">Level</label>
                     <input class="level calc-trigger" id="levelR1" value="100" />
+                </div>
+				<div>
+                    <label for="happinessR1">Happiness</label>
+                    <input class="happiness calc-trigger" type="number" min="0" max="255" step="1" value="0" />
                 </div>
                 <div class="hide">
                     <label for="weightR1">Weight (kg)</label>
