@@ -55,6 +55,7 @@ function CALC_STAT_ADV(poke, statName) {
 function CALC_STAT_LG(poke, statName) {
 	var stat = poke.find("." + statName);
 	var level = ~~poke.find(".level").val();
+	var happiness = ~~poke.find(".happiness").val();
 	var base = ~~stat.find(".base").val();
 	var evs = ~~stat.find(".evs").val();
 	if (evs > 200) {
@@ -64,7 +65,7 @@ function CALC_STAT_LG(poke, statName) {
 	var natureMods = NATURES[poke.find(".nature").val()];
 	var nature = natureMods[0] === statName ? 1.1 : natureMods[1] === statName ? 0.9 : 1;
 	//var total = Math.floor((Math.floor((Math.floor(base*1.1) * 2 + ivs) * level / 100) + 5) * nature) + evs;
-	var total = (Math.floor(((Math.floor((base * 2 + ivs) * level / 100) + 5)*1.1) * nature) + evs);
+	var total = (Math.floor(((Math.floor((base * 2 + ivs) * level / 100) + 5)*(1+Math.floor((happiness*10)/255)/100) * nature) + evs);
 	stat.find(".total").text(total);
 }
 
