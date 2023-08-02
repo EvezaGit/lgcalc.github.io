@@ -43,8 +43,7 @@ var bounds = {
 	"avs": [0, 200],
 	"ivs": [0, 31],
 	"dvs": [0, 15],
-	"move-bp": [0, 999],
-	"happiness": [0, 255]
+	"move-bp": [0, 999]
 };
 for (var bounded in bounds) {
 	attachValidation(bounded, bounds[bounded][0], bounds[bounded][1]);
@@ -496,7 +495,6 @@ function Pokemon(pokeInfo) {
 
 		var set = setdex[this.name][setName];
 		this.level = set.level;
-		this.happiness = set.happiness;
 		this.HPEVs = (set.evs && typeof set.evs.hp !== "undefined") ? set.evs.hp : 0;
 		if (gen < 3) {
 			var HPDVs = 15;
