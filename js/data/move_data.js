@@ -4269,4 +4269,5 @@ var MOVES_LG = {
 	'Sonic Boom': {bp: 0, type: 'Normal', category: 'Special'},
 	'Dragon Rage': {bp: 0, type: 'Dragon', category: 'Special'},
 	'Psywave': {bp: 0, type: 'Psychic', category: 'Special'},
+	'Psybeam': {bp: 65, type: 'Psychic', category: 'Special'},
 }
