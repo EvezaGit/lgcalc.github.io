@@ -4262,4 +4262,11 @@ var MOVES_LG = {
 		type: 'Psychic',
 		category: 'Special'
 	},
+	'Ember': {bp: 40, type: 'Fire', category: 'Special'},
+	'Bubble': {bp: 40, type: 'Water', category: 'Special'},
+	'Vine Whip': {bp: 45, type: 'Grass', category: 'Physical'},
+	'Pound': {bp: 40, type: 'Normal', category: 'Physical'},
+	'Sonic Boom': {bp: 0, type: 'Normal', category: 'Special'},
+	'Dragon Rage': {bp: 0, type: 'Dragon', category: 'Special'},
+	'Psywave': {bp: 0, type: 'Psychic', category: 'Special'},
 }
