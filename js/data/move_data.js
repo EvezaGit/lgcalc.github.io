@@ -4249,7 +4249,7 @@ var MOVES_LG = {
 	},
 	'Peck': {
 		bp: 35, 
-		type: 'Flying'
+		type: 'Flying',
 		category: 'Physical'
 	},
 	'Thunder Shock': {
