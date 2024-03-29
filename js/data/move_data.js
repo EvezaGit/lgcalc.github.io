@@ -312,6 +312,7 @@ var MOVES_RBY = {
 		type: 'Rock',
 		category: 'Physical'
 	},
+	'Scratch': {bp: 40, type: 'Normal'},
 	'Seismic Toss': {
 		bp: 100,
 		type: 'Fighting',
@@ -3253,6 +3254,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
 	'Psycho Cut': {zp: 140},
 	'Psyshock': {zp: 160},
 	'Psystrike': {zp: 180},
+	'Psywave': {zp: 100},
 	'Pulverizing Pancake': {
 		bp: 210,
 		type: 'Normal',
@@ -4245,4 +4247,7 @@ var MOVES_LG = {
 		category: 'Physical',
 		alwaysCrit: true
 	}	
+	'Peck': {bp: 35, type: 'Flying'},
+	'Thunder Shock': {bp: 40, type: 'Electric'},
+	'Confusion': {bp: 50, type: 'Psychic'},
 }
