@@ -223,6 +223,14 @@ function getDamageResult(attacker, defender, move, field) {
 		return {"damage": [lv], "description": buildDescription(description)};
 	}
 
+	if (["Psywave"].indexOf(move.name) !== -1) {
+		var lv = attacker.level;
+		if (attacker.ability === "Parental Bond") {
+			lv *= 2;
+		}
+		return {"damage": [Math.floor(lv * 0.5), Math.floor(lv * 1.5)], "description": buildDescription(description)};
+	}
+
 	if (move.name === "Final Gambit") {
 		var hp = attacker.curHP;
 		return {"damage": [hp], "description": buildDescription(description)};
