@@ -4246,8 +4246,20 @@ var MOVES_LG = {
 		type: 'Electric',
 		category: 'Physical',
 		alwaysCrit: true
-	}	
-	'Peck': {bp: 35, type: 'Flying'},
-	'Thunder Shock': {bp: 40, type: 'Electric'},
-	'Confusion': {bp: 50, type: 'Psychic'},
+	},
+	'Peck': {
+		bp: 35, 
+		type: 'Flying'
+		category: 'Physical'
+	},
+	'Thunder Shock': {
+		bp: 40, 
+		type: 'Electric',
+		category: 'Special'
+	},
+	'Confusion': {
+		bp: 50, 
+		type: 'Psychic',
+		category: 'Special'
+	},
 }
